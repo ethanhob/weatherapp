@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Vollkorn&display=swap');
+/* if you want to import anything it needs to go at the top of the style sheet */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  text-align: center;
+font-family: "Vollkorn";
+background: url('./images/mountain.jpg');
+background-size: cover;
+background-position: center center;
+}
+
+main{
+  height: 150vh;
+  background-image: linear-gradient(to bottom, rgba(97, 124, 128, 0.8), rgba(0,0,0,0.1));
+  padding: 30px;
+}
+.searchBar{
+  height: 40px;
+  width: 400px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: 0px 5px rgba(0,0,0,0.1);
+  border: none;
+  cursor: pointer;
+}
+.searchBar:hover{
+  background-color: rgba(255,255,255,0.9);
+}
+.searchBar:focus{
+  /* focus is anything that accepts mouse inputs */
+  border: none;
+  outline: none;
+}
+.location, .forecast{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+  margin-top: 30px;
+}
+.date {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+  font-style: italic;
+}
+.temp{
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  /* makes the div only go to the width of the element */
+  margin: 30px 10px;
+  padding: 30px;
+  font-size: 80px;
+  font-weight: 900;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: 3px 6px rgba(0,0,0,0.2);
+}
+.weather{
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+.forecastBox {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.maxTemp, .minTemp .days{
+  margin: 40px;
+}
